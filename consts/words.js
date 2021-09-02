@@ -21,8 +21,15 @@ const HEADER = {
   GO_TO_WORKSPACE: "Go To Workspace",
 };
 
+const PRICING = {
+  TALK_TO_SALES: "Talk to Sales",
+  MONTHLY: "Monthly",
+  ANNUALLY: "Annually",
+};
+
 export const WORDS = {
   ...GENERAL,
+  ...PRICING,
   ...HEADER,
   ...FOOTER,
 };

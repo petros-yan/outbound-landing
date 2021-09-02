@@ -6,8 +6,7 @@ import { WORDS, HEADER_MENU_ITEMS } from "consts";
 import classNames from "classnames";
 
 const styles = {
-  box: "flex items-center justify-between h-full px-82px",
-  button: "text-black bg-green-500",
+  box: "flex items-center justify-between h-full",
   itemsBox: "flex items-center",
   item: "ml-9 p-2 text-white text-14 rounded-lg cursor-pointer border border-transparent hover:border-white-25",
   activeItem: "bg-white-25",
@@ -22,7 +21,7 @@ const HorizontalMenu = () => {
 
       <nav>
         <ul className={styles.itemsBox}>
-          {HEADER_MENU_ITEMS.map((menuItem, i) => {
+          {HEADER_MENU_ITEMS.map((menuItem) => {
             const { title, link } = menuItem;
 
             return (

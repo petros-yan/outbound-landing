@@ -1,14 +1,14 @@
 import { Page } from "components/templates";
+import { AboutSections } from "components/organisms";
 import { GET_CATEGORIES } from "services";
 import client from "services/client";
+const { SectionA } = AboutSections;
 
 export default function About(props) {
-  const { title } = props;
-
   return (
     <div>
       <Page>
-        <h2>{title}</h2>
+        <SectionA />
       </Page>
     </div>
   );

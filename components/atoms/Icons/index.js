@@ -13,3 +13,5 @@ export { WriteFast } from "./WriteFast";
 export { FastAndQuality } from "./FastAndQuality";
 export { ContactBack } from "./ContactBack";
 export { Teamwork } from "./Teamwork";
+export { Done } from "./Done";
+export { Members } from "./Members";

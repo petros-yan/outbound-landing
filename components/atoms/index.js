@@ -6,3 +6,4 @@ export { default as Paragraph } from "./Paragraph";
 export { default as Image } from "./Image";
 export { default as Heading } from "./Heading";
 export { default as Divider } from "./Divider";
+export { default as Container } from "./Container";

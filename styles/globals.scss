@@ -1,3 +1,7 @@
+html,
+body {
+  min-width: 320px;
+}
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -6,18 +10,6 @@
 .brd {
   border: 1px solid red;
 }
-.bg {
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.175) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-}
-
-.ellipsePossition {
-  left: calc(50% + 27px);
-}
-
 .section2Bg {
   background-color: #13142c;
 }
@@ -27,4 +19,8 @@
     #3f51b5 -31.39%,
     rgba(63, 81, 181, 0) 60.03%
   );
+}
+
+.translateX {
+  transform: translateX(100%);
 }

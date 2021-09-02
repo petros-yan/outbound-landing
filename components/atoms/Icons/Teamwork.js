@@ -82,8 +82,8 @@ export const Teamwork = () => {
           y2="15.0536"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2196F3" />
-          <stop offset="1" stop-color="#1976D2" />
+          <stop stopColor="#2196F3" />
+          <stop offset="1" stopColor="#1976D2" />
         </linearGradient>
         <linearGradient
           id="paint1_linear"
@@ -93,8 +93,8 @@ export const Teamwork = () => {
           y2="17.9009"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2196F3" />
-          <stop offset="1" stop-color="#1976D2" />
+          <stop stopColor="#2196F3" />
+          <stop offset="1" stopColor="#1976D2" />
         </linearGradient>
         <linearGradient
           id="paint2_linear"
@@ -104,8 +104,8 @@ export const Teamwork = () => {
           y2="19.6024"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2196F3" />
-          <stop offset="1" stop-color="#1976D2" />
+          <stop stopColor="#2196F3" />
+          <stop offset="1" stopColor="#1976D2" />
         </linearGradient>
         <linearGradient
           id="paint3_linear"
@@ -115,8 +115,8 @@ export const Teamwork = () => {
           y2="17.9019"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2196F3" />
-          <stop offset="1" stop-color="#1976D2" />
+          <stop stopColor="#2196F3" />
+          <stop offset="1" stopColor="#1976D2" />
         </linearGradient>
         <linearGradient
           id="paint4_linear"
@@ -126,8 +126,8 @@ export const Teamwork = () => {
           y2="44.5179"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2196F3" />
-          <stop offset="1" stop-color="#1976D2" />
+          <stop stopColor="#2196F3" />
+          <stop offset="1" stopColor="#1976D2" />
         </linearGradient>
         <linearGradient
           id="paint5_linear"
@@ -137,8 +137,8 @@ export const Teamwork = () => {
           y2="61.2331"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2196F3" />
-          <stop offset="1" stop-color="#1976D2" />
+          <stop stopColor="#2196F3" />
+          <stop offset="1" stopColor="#1976D2" />
         </linearGradient>
         <linearGradient
           id="paint6_linear"
@@ -148,8 +148,8 @@ export const Teamwork = () => {
           y2="43.7852"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2196F3" />
-          <stop offset="1" stop-color="#1976D2" />
+          <stop stopColor="#2196F3" />
+          <stop offset="1" stopColor="#1976D2" />
         </linearGradient>
         <linearGradient
           id="paint7_linear"
@@ -159,8 +159,8 @@ export const Teamwork = () => {
           y2="61.0827"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2196F3" />
-          <stop offset="1" stop-color="#1976D2" />
+          <stop stopColor="#2196F3" />
+          <stop offset="1" stopColor="#1976D2" />
         </linearGradient>
       </defs>
     </svg>

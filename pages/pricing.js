@@ -1,15 +1,18 @@
-import { Page } from "components/templates";
+import { WithoutFooterPage } from "components/templates";
+import { PricingSections } from "components/organisms";
 import { GET_CATEGORIES } from "services";
+import { PRICING_DATA } from "consts";
 import client from "services/client";
+const { SectionA } = PricingSections;
 
 export default function Pricing(props) {
-  const { title } = props;
+  const { data } = props;
 
   return (
     <div>
-      <Page>
-        <h2>{title}</h2>
-      </Page>
+      <WithoutFooterPage>
+        <SectionA data={data} />
+      </WithoutFooterPage>
     </div>
   );
 }
@@ -19,7 +22,7 @@ export async function getServerSideProps() {
 
   return {
     props: {
-      title: "Pricing",
+      data: PRICING_DATA,
       categories: data.categories,
     },
   };

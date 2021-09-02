@@ -1,20 +1,20 @@
 import { Page } from "components/templates";
 import { HomeSections } from "components/organisms";
-import { HOME_MOCK_DATA } from "consts";
+import { HOME_DATA } from "consts";
 import { GET_CATEGORIES } from "services";
 import client from "services/client";
-const { Section1, Section2, Section3, Section4, Section5 } = HomeSections;
+const { SectionA, SectionB, SectionC, SectionD, SectionE } = HomeSections;
 
 export default function Home(props) {
-  const { section1, section2, section4, section5 } = props;
+  const { sectionA, sectionB, sectionD, sectionE } = props;
 
   return (
     <Page>
-      <Section1 data={section1} />
-      <Section2 data={section2} />
-      <Section3 />
-      <Section4 data={section4} />
-      <Section5 data={section5} />
+      <SectionA data={sectionA} />
+      <SectionB data={sectionB} />
+      <SectionC />
+      <SectionD data={sectionD} />
+      <SectionE data={sectionE} />
     </Page>
   );
 }
@@ -24,7 +24,7 @@ export async function getServerSideProps() {
 
   return {
     props: {
-      ...HOME_MOCK_DATA,
+      ...HOME_DATA,
       categories: data.categories,
     },
   };

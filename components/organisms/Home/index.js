@@ -1,5 +1,5 @@
-export { default as Section1 } from "./Section1";
-export { default as Section2 } from "./Section2";
-export { default as Section3 } from "./Section3";
-export { default as Section4 } from "./Section4";
-export { default as Section5 } from "./Section5";
+export { default as SectionA } from "./SectionA";
+export { default as SectionB } from "./SectionB";
+export { default as SectionC } from "./SectionC";
+export { default as SectionD } from "./SectionD";
+export { default as SectionE } from "./SectionE";

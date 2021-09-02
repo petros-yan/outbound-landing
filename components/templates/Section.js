@@ -1,22 +1,17 @@
 import PropTypes from "prop-types";
-import { Header, Footer } from "components/organisms";
 import classNames from "classnames";
-import { styles } from "ansi-colors";
 
-const classes = {
-  root: "min-h-screen flex flex-col",
+const styles = {
+  dark: "bg-dark",
+  root: "section2Bg",
+  alpha: "bg-dark-alpha",
+  black: "bg-black",
+  gradient: "bg-gradient-gamma",
 };
 
-const BACKGROUND_TYPES = {
-  ALPHA: "bg-primary",
-  BETA: "bg-red-100",
-  GRADIENT_ALPHA: "",
-};
-
-const Section = ({ children, background }) => {
-  const backgroundClasses = BACKGROUND_TYPES[background];
+const Section = ({ children, className, bgType = "dark" }) => {
   return (
-    <section className={classNames(backgroundClasses, classes.root)}>
+    <section className={classNames(styles[bgType], className)}>
       {children}
     </section>
   );

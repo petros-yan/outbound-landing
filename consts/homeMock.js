@@ -1,7 +1,7 @@
 import { Icons } from "components/atoms";
 const { WriteFast, FastAndQuality, ContactBack, Teamwork } = Icons;
 
-export const HOME_MOCK_DATA = {
+export const HOME_DATA = {
   section1: {
     heading: "Write better sales emails, together.",
     paragraph1:

@@ -23,9 +23,9 @@ export const FastAndQuality = () => {
         <path
           d="M66.0842 33.9747L71.2632 38.1179L78.721 27.5527"
           stroke="white"
-          stroke-width="4"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
+          strokeWidth="4"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
         />
       </g>
       <defs>
@@ -37,8 +37,8 @@ export const FastAndQuality = () => {
           y2="76.0401"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1976D2" />
-          <stop offset="0.8203" stop-color="#2196F3" />
+          <stop stopColor="#1976D2" />
+          <stop offset="0.8203" stopColor="#2196F3" />
         </linearGradient>
         <linearGradient
           id="paint1_linear"
@@ -48,8 +48,8 @@ export const FastAndQuality = () => {
           y2="33.7101"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2196F3" />
-          <stop offset="1" stop-color="#1976D2" />
+          <stop stopColor="#2196F3" />
+          <stop offset="1" stopColor="#1976D2" />
         </linearGradient>
       </defs>
     </svg>

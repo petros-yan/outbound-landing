@@ -34,8 +34,8 @@ export const ContactBack = () => {
           y2="76.0402"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1976D2" />
-          <stop offset="0.8203" stop-color="#2196F3" />
+          <stop stopColor="#1976D2" />
+          <stop offset="0.8203" stopColor="#2196F3" />
         </linearGradient>
         <linearGradient
           id="paint1_linear"
@@ -45,8 +45,8 @@ export const ContactBack = () => {
           y2="33.7706"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2196F3" />
-          <stop offset="1" stop-color="#1976D2" />
+          <stop stopColor="#2196F3" />
+          <stop offset="1" stopColor="#1976D2" />
         </linearGradient>
       </defs>
     </svg>
