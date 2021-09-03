@@ -2,13 +2,19 @@ import { Page } from "components/templates";
 import { AboutSections } from "components/organisms";
 import { GET_CATEGORIES } from "services";
 import client from "services/client";
-const { SectionA } = AboutSections;
+const { SectionA, SectionB, SectionC, SectionD, SectionE, SectionF } =
+  AboutSections;
 
 export default function About(props) {
   return (
     <div>
       <Page>
         <SectionA />
+        <SectionB />
+        <SectionC />
+        <SectionD />
+        <SectionE />
+        <SectionF />
       </Page>
     </div>
   );
@@ -19,7 +25,6 @@ export async function getServerSideProps() {
 
   return {
     props: {
-      title: "About",
       categories: data.categories,
     },
   };
