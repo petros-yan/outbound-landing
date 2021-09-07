@@ -25,24 +25,24 @@
 <circle r="45" transform="matrix(-1 0 0 1 45 45)" fill="url(#paint4_radial)"/>
 <defs>
 <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(95.4314 78.5) rotate(59.257) scale(274.006 424.654)">
-<stop stop-color="#BDC0FF"/>
-<stop offset="1" stop-color="#3515F9" stop-opacity="0"/>
+<stop stopColor="#BDC0FF"/>
+<stop offset="1" stopColor="#3515F9" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20.9706 17.25) rotate(59.257) scale(60.2116 93.3156)">
-<stop stop-color="#FFDFFA"/>
-<stop offset="1" stop-color="#F01758" stop-opacity="0"/>
+<stop stopColor="#FFDFFA"/>
+<stop offset="1" stopColor="#F01758" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.3235 14.25) rotate(59.257) scale(49.74 77.0868)">
-<stop stop-color="#FBFFDF"/>
-<stop offset="1" stop-color="#F0C017" stop-opacity="0"/>
+<stop stopColor="#FBFFDF"/>
+<stop offset="1" stopColor="#F0C017" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="paint3_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32.8235 27) rotate(59.257) scale(94.2442 146.059)">
-<stop stop-color="#BDE2FF"/>
-<stop offset="1" stop-color="#1594F9" stop-opacity="0"/>
+<stop stopColor="#BDE2FF"/>
+<stop offset="1" stopColor="#1594F9" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="paint4_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(27.3529 22.5) rotate(59.257) scale(78.5368 121.716)">
-<stop stop-color="#BEFFBD"/>
-<stop offset="1" stop-color="#4ED011" stop-opacity="0"/>
+<stop stopColor="#BEFFBD"/>
+<stop offset="1" stopColor="#4ED011" stop-opacity="0"/>
 </radialGradient>
 </defs>
 </svg>

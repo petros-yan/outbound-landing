@@ -6,7 +6,7 @@ import {
   Spacing,
 } from "components/atoms";
 import { Section } from "components/templates";
-import { Fragment } from "react";
+import classNames from "classnames";
 const { WriteFast, Teamwork, ContactBack, FastAndQuality } = Icons;
 
 const getIcons = (num) => {
@@ -37,10 +37,15 @@ const SectionE = ({ data }) => {
         </div>
         <Spacing className="pb-10" />
 
-        <div className="md:flex">
+        <div className="md:flex flex-wrap justify-between">
           {boards.map((board, i) => {
             return (
-              <Fragment key={i}>
+              <div
+                key={i}
+                className={classNames(
+                  i === 0 || i === 3 ? "lg:w-328px" : "lg:w-270px"
+                )}
+              >
                 <div className="p-4 border border-white-25 rounded-3xl bg-black-25">
                   {getIcons(i)}
                   <Spacing className="pb-8" />
@@ -52,7 +57,7 @@ const SectionE = ({ data }) => {
                   <Spacing className="xs:pb-4 md:pb-0" />
                 ) : null}
                 {i !== boards.length - 1 ? <Spacing className="pr-4" /> : null}
-              </Fragment>
+              </div>
             );
           })}
         </div>

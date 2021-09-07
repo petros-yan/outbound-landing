@@ -26,7 +26,7 @@ const SectionD = ({ data }) => {
         <Spacing className="pb-2" />
         <div className="flex items-center">
           <div>
-            <Image src={ourvision} />
+            <Image src={ourvision} alt="img" />
           </div>
           <Spacing className="pl-30" />
           <div>
@@ -41,7 +41,7 @@ const SectionD = ({ data }) => {
             </Paragraph>
             <Spacing className="pb-5" />
             <Paragraph className="text-white-75 text-24">
-              Isn't that kind of insane?
+              {"Isn't that kind of insane?"}
             </Paragraph>
           </div>
         </div>

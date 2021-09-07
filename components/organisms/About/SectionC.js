@@ -12,7 +12,7 @@ const SectionC = ({ data }) => {
           </Heading>
           <Spacing className="pb-3" />
           <Paragraph className="text-white-75 text-24">
-            Outbound is a repository of your team's best writing.
+            {"Outbound is a repository of your team's best writing."}
           </Paragraph>
         </div>
         <Spacing className="pb-23" />

@@ -22,9 +22,9 @@ const SectionE = ({ data }) => {
         </div>
         <Spacing className="pb-14" />
         <div className="flex flex-wrap justify-between">
-          {arr.map((el) => {
+          {arr.map((el, i) => {
             return (
-              <div className="h-270px w-405px mb-4 group">
+              <div key={i} className="h-270px w-405px mb-4 group">
                 <div className="w-full h-full p-4 rounded-3xl bg-black group-hover:bg-white">
                   <Paragraph className="text-24 text-white group-hover:text-black">
                     {el}

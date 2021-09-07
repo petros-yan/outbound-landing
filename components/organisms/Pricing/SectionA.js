@@ -20,7 +20,7 @@ const FreeSection = ({ data }) => {
   const { type, list } = data;
 
   return (
-    <div className="px-38px lg:w-385px w-full min-h-580 bg-black-25 lg:rounded-tr-3xl lg:rounded-br-3xl rounded-3xl">
+    <div className="px-38px lg:w-385px w-full min-h-580 bg-black-25 lg:rounded-tr-3xl lg:rounded-br-3xl rounded-3xl mb-2 lg:mb-0">
       <Spacing className="pb-16" />
       <Heading level={2} className="text-white text-30">
         {type}
@@ -29,11 +29,11 @@ const FreeSection = ({ data }) => {
       <div>
         {list.map((el, i) => {
           return (
-            <Fragment>
+            <Fragment key={i}>
               <div className="flex items-center">
                 <Done className="fill-current text-indigo-500" />
                 <Spacing className="pl-3" />
-                <p key={i} dangerouslySetInnerHTML={{ __html: el }} />
+                <p dangerouslySetInnerHTML={{ __html: el }} />
               </div>
               <Spacing className="pb-4" />
             </Fragment>
@@ -47,7 +47,7 @@ const FreeSection = ({ data }) => {
 const TeamSection = ({ data }) => {
   const { type, list, price, title } = data;
   return (
-    <div className="px-38px lg:w-385px w-full min-h-635 bg-indigo-700 rounded-3xl">
+    <div className="px-38px lg:w-385px w-full min-h-635 lg:bg-indigo-700 bg-black-25 rounded-3xl mb-2 lg:mb-0">
       <Spacing className="pb-11" />
       <Heading level={2} className="text-white-50 text-24">
         {type}
@@ -69,11 +69,11 @@ const TeamSection = ({ data }) => {
       <div>
         {list.map((el, i) => {
           return (
-            <Fragment>
+            <Fragment key={i}>
               <div className="flex items-center">
                 <Done className="fill-current text-white" />
                 <Spacing className="pl-3" />
-                <p key={i} dangerouslySetInnerHTML={{ __html: el }} />
+                <p dangerouslySetInnerHTML={{ __html: el }} />
               </div>
               <Spacing className="pb-4" />
             </Fragment>
@@ -109,11 +109,11 @@ const EnterpriceSection = ({ data }) => {
       <div>
         {list.map((el, i) => {
           return (
-            <Fragment>
+            <Fragment key={i}>
               <div className="flex items-center">
                 <Done className="fill-current text-indigo-500" />
                 <Spacing className="pl-3" />
-                <p key={i} dangerouslySetInnerHTML={{ __html: el }} />
+                <p dangerouslySetInnerHTML={{ __html: el }} />
               </div>
               <Spacing className="pb-4" />
             </Fragment>
@@ -136,7 +136,7 @@ const SectionA = ({ data }) => {
   };
 
   return (
-    <Section className="lg:h-100vh-50">
+    <Section>
       <Container>
         <Spacing className="pb-7" />
         <div className="flex items-center justify-center">
@@ -150,7 +150,10 @@ const SectionA = ({ data }) => {
           </Text>
           <Spacing className="pl-3" />
           <div className="flex items-center justify-center">
-            <label for="toogle" className="flex items-center cursor-pointer">
+            <label
+              htmlFor="toogle"
+              className="flex items-center cursor-pointer"
+            >
               <div className="relative">
                 <input
                   id="toogle"
@@ -160,11 +163,13 @@ const SectionA = ({ data }) => {
                 />
                 <div className="w-6 h-12px bg-indigo-500 rounded-full"></div>
                 <div
-                  className={classNames("absolute -left-1 -top-2 transition", {
+                  className={classNames("absolute -left-1 -top-1 transition", {
                     ["translateX"]: !isMounthly,
                   })}
                 >
-                  <Image src={toggle} />
+                  <div className=" border-5 rounded-full border-white">
+                    <div className="w-2 h-2 rounded-full bg-indigo-500" />
+                  </div>
                 </div>
               </div>
             </label>
@@ -182,13 +187,12 @@ const SectionA = ({ data }) => {
         <Spacing className="pb-6" />
         <div className="lg:flex justify-center items-center">
           <FreeSection data={sectionA} />
-          <div>
-            <TeamSection data={sectionB} />
-          </div>
+          <TeamSection data={sectionB} />
           <EnterpriceSection data={sectionC} />
         </div>
         <Spacing className="pb-4" />
       </Container>
+      <Spacing className="pb-12" />
     </Section>
   );
 };

@@ -12,7 +12,7 @@ const OutboundLogo = () => {
   return (
     <Link href={PATHS.HOME} passHref>
       <div className={styles.box}>
-        <Image src={brend} />
+        <Image src={brend} alt="img" />
         <Spacing className="pl-2" />
         <Text className={styles.text}>{WORDS.OUTBOUND}</Text>
       </div>

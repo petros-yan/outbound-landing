@@ -13,12 +13,12 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
 </filter>
 <linearGradient id="paint0_linear" x1="2.45426" y1="2.09076" x2="37.3622" y2="21.4405" gradientUnits="userSpaceOnUse">
-<stop stop-color="#504CAD"/>
-<stop offset="1" stop-color="#8BC34A" stop-opacity="0.81"/>
+<stop stopColor="#504CAD"/>
+<stop offset="1" stopColor="#8BC34A" stop-opacity="0.81"/>
 </linearGradient>
 <linearGradient id="paint1_linear" x1="15.7989" y1="15.5" x2="-1.263" y2="34.1015" gradientUnits="userSpaceOnUse">
-<stop stop-color="#504CAD" stop-opacity="0"/>
-<stop offset="1" stop-color="#E91E63"/>
+<stop stopColor="#504CAD" stop-opacity="0"/>
+<stop offset="1" stopColor="#E91E63"/>
 </linearGradient>
 </defs>
 </svg>

@@ -43,7 +43,7 @@ const SectionB = ({ data }) => {
           </div>
           <Spacing className="mb-11" />
           <div>
-            <Image src={homeSection2Left} />
+            <Image src={homeSection2Left} alt="img" />
           </div>
           <Spacing className="lg:pb-18" />
         </div>
@@ -52,10 +52,10 @@ const SectionB = ({ data }) => {
           <Spacing className="pb-13" />
 
           <div className="xs:hidden md:block absolute top-10 -left-40">
-            <Image src={vector} />
+            <Image src={vector} alt="img" />
           </div>
           <div className="xs:hidden md:block invisible">
-            <Image src={vector} />
+            <Image src={vector} alt="img" />
           </div>
 
           <div className="max-w-530">

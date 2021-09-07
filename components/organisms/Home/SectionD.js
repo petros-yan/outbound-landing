@@ -24,18 +24,17 @@ const SectionD = ({ data }) => {
           </Heading>
         </div>
         <Spacing className="pb-38px" />
-        <div className="xs:hidden md:block flex justify-center">
-          <Image src={homeSection4} className="m-0" />
+        <div className="hidden lg:flex justify-center">
+          <Image src={homeSection4} alt="img" className="m-0" />
         </div>
 
-        <div className="xs:block md:hidden">
+        <div className="md:block lg:hidden xs:w-328px md:w-444px m-auto">
           <div className="text-center">
-            <Image src={users} />
+            <Image alt="img" src={users} />
             <Spacing className="pb-8" />
-            <Image src={email} />
+            <Image alt="img" src={email} />
             <Spacing className="pb-13" />
           </div>
-
           <div>
             {paragraphs.map((paragraph, i) => {
               return (

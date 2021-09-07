@@ -24,7 +24,9 @@ const SectionA = ({ data }) => {
             <Pricing className="w-10 h-10" />
             <Spacing className="pl-4" />
             <Paragraph className="text-white-75 text-24 w-285px">
-              Microtemplates to store your team's best messaging and examples.
+              {
+                "Microtemplates to store your team's best messaging and examples."
+              }
             </Paragraph>
           </div>
           <Spacing className="pl-11" />

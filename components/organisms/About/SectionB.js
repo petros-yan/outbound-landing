@@ -19,11 +19,10 @@ const SectionB = ({ data }) => {
             url="https://firebasestorage.googleapis.com/v0/b/armath-send.appspot.com/o/pexels-yan-krukov-8865924.mp4?alt=media&token=f6c7ac5d-71ff-426b-9401-ef90fc171b22"
             playIcon={
               <div className="bg-black w-895px h-106 rounded-40 flex items-center justify-center">
-                <Image src={play} />
+                <Image src={play} alt="img" />
               </div>
             }
             light={true}
-            autoplay={true}
             controls
           />
         </div>

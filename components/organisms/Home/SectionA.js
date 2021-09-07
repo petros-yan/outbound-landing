@@ -27,7 +27,7 @@ const Content = ({ data }) => {
           </Heading>
           <div className="md:hidden block">
             <Spacing className="pb-5" />
-            <Image src={homeSection1} />
+            <Image src={homeSection1} alt="img" />
           </div>
           <Spacing className="pb-8" />
           <Paragraph className="text-white-75 lg:text-24 text-17">
@@ -46,9 +46,9 @@ const Content = ({ data }) => {
       <div className="lg:w-50% w-full hidden md:block relative">
         <div className="w-full h-full lg:pl-42px md:pl-5">
           <Spacing className="lg:pb-31 md:pb-18 pb-48px" />
-          <Image src={homeSection1} />
+          <Image src={homeSection1} alt="img" />
         </div>
-        <div className="md:hidden lg:bl absolute bottom-32px -left-3">
+        <div className="md:hidden lg:block absolute bottom-32px -left-3">
           <Ellipse />
         </div>
       </div>

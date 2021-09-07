@@ -1,4 +1,4 @@
-import { WithoutFooterPage } from "components/templates";
+import { Page } from "components/templates";
 import { PricingSections } from "components/organisms";
 import { GET_CATEGORIES } from "services";
 import { PRICING_DATA } from "consts";
@@ -10,9 +10,9 @@ export default function Pricing(props) {
 
   return (
     <div>
-      <WithoutFooterPage>
+      <Page>
         <SectionA data={data} />
-      </WithoutFooterPage>
+      </Page>
     </div>
   );
 }

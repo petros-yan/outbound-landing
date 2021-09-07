@@ -14,11 +14,11 @@ export const HOME_DATA = {
         color: "text-white",
       },
       {
-        title: "old",
+        title: "new",
         color: "text-green-500",
       },
       {
-        title: "way: tribal knowledge",
+        title: "way",
         color: "text-white",
       },
     ],
