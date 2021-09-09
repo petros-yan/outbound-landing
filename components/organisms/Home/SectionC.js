@@ -70,8 +70,8 @@ const Step4 = () => {
         </Heading>
         <Spacing className="pb-8" />
         <Paragraph className="text-white-75 text-24">
-          Each email you write makes your next outbound, and your teammates'
-          next outbound, better. Build a repository of what actually works.
+          {`Each email you write makes your next outbound, and your teammates'
+          next outbound, better. Build a repository of what actually works.`}
         </Paragraph>
       </div>
     </div>

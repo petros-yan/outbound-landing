@@ -15,10 +15,6 @@ export const HEADER_MENU_ITEMS = [
     title: WORDS.PRICING,
     link: PATHS.PRICING,
   },
-  {
-    title: WORDS.ENTERPRISE_PLAN,
-    link: PATHS.ENTERPRISE_PLAN,
-  },
 ];
 
 export const FOOTER_MENU_ITEMS = [

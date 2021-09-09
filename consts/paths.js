@@ -3,5 +3,4 @@ export const PATHS = {
   HOME: "/",
   ABOUT: "/about",
   PRICING: "/pricing",
-  ENTERPRISE_PLAN: "/enterprise-plan",
 };

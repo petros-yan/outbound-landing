@@ -11,11 +11,7 @@ const GoogleButton = (props) => {
   const { title } = props;
 
   return (
-    <Button
-      type={BUTTON_TYPES.WITH_ICON}
-      className={styles.button}
-      onClick={() => console.log("OK")}
-    >
+    <Button type={BUTTON_TYPES.WITH_ICON} className={styles.button}>
       <div className={styles.contentBox}>
         <Google />
         <Spacing className="pl-2" />

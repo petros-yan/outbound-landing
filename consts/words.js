@@ -3,7 +3,6 @@ const GENERAL = {
   HOME: "Home",
   ABOUT: "About",
   PRICING: "Pricing",
-  ENTERPRISE_PLAN: "Enterprice Plan",
   OUTBOUND: "Outbound",
   CONTINUE_WITH_GOOGLE: "Continue with Google",
 };

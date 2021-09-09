@@ -31,7 +31,7 @@ const SectionE = ({ data }) => {
       <Container>
         <div className="w-full"></div>
         <Spacing className="pb-22" />
-        <div className>
+        <div>
           <Heading className="text-36 font-black text-white" level={2}>
             {heading}
           </Heading>
