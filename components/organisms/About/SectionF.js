@@ -1,11 +1,11 @@
 import { Container, Heading, Spacing } from "components/atoms";
 import { GoogleButton } from "components/molecules";
 import { Section } from "components/templates";
-import { WORDS } from "consts";
+import { WORDS, SECTION_COLORS } from "consts";
 
 const SectionF = ({ data }) => {
   return (
-    <Section bgType="gradient">
+    <Section bg={SECTION_COLORS.PINK_GRADIENT}>
       <Container>
         <Spacing className="pb-12" />
         <div className="text-center">
@@ -13,7 +13,7 @@ const SectionF = ({ data }) => {
             Want to try it?
           </Heading>
           <Spacing className="pb-6" />
-          <GoogleButton title={WORDS.SIGNE_UP} />
+          <GoogleButton title={WORDS.CONTINUE_WITH_GOOGLE} />
         </div>
         <Spacing className="pb-31" />
       </Container>

@@ -5,7 +5,6 @@ export { Home } from "./Home";
 export { About } from "./About";
 export { Pricing } from "./Pricing";
 export { Linkedin } from "./Linkedin";
-export { Url } from "./Url";
 export { Twitter } from "./Twitter";
 export { Times } from "./Times";
 export { Ellipse } from "./Ellipse";

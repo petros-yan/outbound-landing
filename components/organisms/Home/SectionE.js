@@ -5,6 +5,7 @@ import {
   Icons,
   Spacing,
 } from "components/atoms";
+import { SECTION_COLORS } from "consts";
 import { Section } from "components/templates";
 import classNames from "classnames";
 const { WriteFast, Teamwork, ContactBack, FastAndQuality } = Icons;
@@ -26,7 +27,7 @@ const SectionE = ({ data }) => {
   const { heading, boards } = data;
 
   return (
-    <Section bgType="gradient">
+    <Section bg={SECTION_COLORS.BLUE_GRADIENT}>
       <Container>
         <div className="w-full"></div>
         <Spacing className="pb-22" />

@@ -1,11 +1,12 @@
 import { Container, Heading, Spacing, Image } from "components/atoms";
 import { Section } from "components/templates";
+import { SECTION_COLORS } from "consts";
 import ReactPlayer from "react-player";
 import play from "public/assets/play.svg";
 
 const SectionB = ({ data }) => {
   return (
-    <Section bgType="root">
+    <Section bg={SECTION_COLORS.DARK_500}>
       <Container className="text-center">
         <Spacing className="pb-12" />
         <Heading className="text-white font-black text-32">

@@ -5,6 +5,7 @@ import {
   Image,
   Container,
 } from "components/atoms";
+import { SECTION_COLORS } from "consts";
 import homeSection2Left from "public/assets/homeSection2Left.svg";
 import classNames from "classnames";
 import { Section } from "components/templates";
@@ -19,7 +20,7 @@ const SectionB = ({ data }) => {
   } = data;
 
   return (
-    <Section bgType="root">
+    <Section bg={SECTION_COLORS.DARK_50}>
       <Container className="md:flex">
         <div className="w-full md:w-50%">
           <Spacing className="pb-13" />

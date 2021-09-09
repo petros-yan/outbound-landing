@@ -6,8 +6,6 @@ const GENERAL = {
   ENTERPRISE_PLAN: "Enterprice Plan",
   OUTBOUND: "Outbound",
   CONTINUE_WITH_GOOGLE: "Continue with Google",
-  CONTINUE: "Continue",
-  SIGNE_UP: "Sign up for free with Google",
 };
 
 const FOOTER = {

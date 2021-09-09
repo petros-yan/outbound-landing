@@ -1,10 +1,10 @@
 import { Fragment, useState } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
 import { Button, Spacing, Text, Icons, Container } from "components/atoms";
 import { OutboundLogo, GoogleButton } from "components/molecules";
 import { WORDS, HEADER_MENU_ITEMS } from "consts";
 import classNames from "classnames";
+import Link from "next/link";
 const { Hamburger } = Icons;
 
 const styles = {
@@ -17,6 +17,7 @@ const styles = {
   activeItem: "bg-white-25",
   itemsWrapper: "inline-block",
   verticalMenuHeight: "h-100vh-50",
+  nav: "flex-1 overflow-y-auto",
 };
 
 const VerticalMenu = () => {
@@ -29,9 +30,6 @@ const VerticalMenu = () => {
         <div className={styles.topBox}>
           <OutboundLogo />
           <div className="flex">
-            <div className="xs:block sm:hidden">
-              <GoogleButton title={WORDS.CONTINUE} />
-            </div>
             <div className="hidden sm:block">
               <GoogleButton title={WORDS.CONTINUE_WITH_GOOGLE} />
             </div>
@@ -51,7 +49,7 @@ const VerticalMenu = () => {
         {isOpen ? (
           <Fragment>
             <Spacing className="pb-6" />
-            <nav className="flex-1 overflow-y-auto">
+            <nav className={styles.nav}>
               <ul className={styles.itemsWrapper}>
                 {HEADER_MENU_ITEMS.map((menuItem) => {
                   const { title, link } = menuItem;

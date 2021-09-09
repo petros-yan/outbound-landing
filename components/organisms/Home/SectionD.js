@@ -5,6 +5,7 @@ import {
   Container,
   Paragraph,
 } from "components/atoms";
+import { SECTION_COLORS } from "consts";
 import { Section } from "components/templates";
 import homeSection4 from "public/assets/homeSection4.png";
 import users from "public/assets/users.svg";
@@ -15,7 +16,7 @@ const SectionD = ({ data }) => {
   const { heading, paragraphs } = data;
 
   return (
-    <Section bgType="root">
+    <Section bg={SECTION_COLORS.DARK_50}>
       <Container>
         <Spacing className="pb-11" />
         <div className="max-w-480 m-auto text-center">

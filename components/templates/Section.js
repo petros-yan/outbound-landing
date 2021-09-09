@@ -1,20 +1,9 @@
 import PropTypes from "prop-types";
 import classNames from "classnames";
+import { SECTION_COLORS } from "consts";
 
-const styles = {
-  dark: "bg-dark",
-  root: "section2Bg",
-  alpha: "bg-dark-alpha",
-  black: "bg-black",
-  gradient: "bg-gradient-gamma",
-};
-
-const Section = ({ children, className, bgType = "dark" }) => {
-  return (
-    <section className={classNames(styles[bgType], className)}>
-      {children}
-    </section>
-  );
+const Section = ({ children, className, bg = SECTION_COLORS.DARK }) => {
+  return <section className={classNames(bg, className)}>{children}</section>;
 };
 
 Section.propTypes = {

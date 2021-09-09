@@ -1,5 +1,6 @@
 import { Container, Heading, Paragraph, Spacing } from "components/atoms";
 import { Section } from "components/templates";
+import { SECTION_COLORS } from "consts";
 
 const arr = [
   "Custom outbound must be easier- no more spending 20 minutes per email.",
@@ -12,7 +13,7 @@ const arr = [
 
 const SectionE = ({ data }) => {
   return (
-    <Section>
+    <Section bg={SECTION_COLORS.DARK_500}>
       <Container>
         <Spacing className="pb-12" />
         <div className="text-center">

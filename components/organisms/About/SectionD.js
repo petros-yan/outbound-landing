@@ -6,11 +6,12 @@ import {
   Image,
 } from "components/atoms";
 import { Section } from "components/templates";
+import { SECTION_COLORS } from "consts";
 import ourvision from "public/assets/ourvision.svg";
 
 const SectionD = ({ data }) => {
   return (
-    <Section bgType="gradient">
+    <Section bg={SECTION_COLORS.LIGHT_BLUE_GRADIENT}>
       <Container>
         <Spacing className="pb-21" />
         <div className="text-center">

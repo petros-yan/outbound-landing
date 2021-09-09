@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Text, Spacing, Image } from "components/atoms";
 import { WORDS, PATHS } from "consts";
-import brend from "public/assets/brend.svg";
+import brend from "public/assets/brend.png";
 
 const styles = {
   box: "flex items-center cursor-pointer",

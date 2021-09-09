@@ -38,7 +38,7 @@ const Content = ({ data }) => {
             {paragraph2}
           </Paragraph>
           <Spacing className="pb-6" />
-          <GoogleButton title={WORDS.SIGNE_UP} />
+          <GoogleButton title={WORDS.CONTINUE_WITH_GOOGLE} />
         </div>
         <Spacing className="lg:pb-47 md:pb-28 pb-19" />
       </div>
@@ -61,7 +61,7 @@ const SectionA = ({ data }) => {
     <section className="relative w-full">
       <div className="absolute top-0 left-0 w-full h-full lg:flex">
         <div className=" lg:w-6/12 w-full h-full bg-dark"></div>
-        <div className=" bg-dark lg:w-6/12 w-full h-full md:bg-gradient-betta"></div>
+        <div className=" bg-dark lg:w-6/12 w-full h-full md:bg-dark-gradient"></div>
       </div>
 
       <div className="min-h top-0 left-0 h-full w-full absolute">

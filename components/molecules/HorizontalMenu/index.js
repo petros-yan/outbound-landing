@@ -1,9 +1,9 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { Paragraph } from "components/atoms";
 import { OutboundLogo, GoogleButton } from "components/molecules";
 import { WORDS, HEADER_MENU_ITEMS } from "consts";
 import classNames from "classnames";
+import Link from "next/link";
 
 const styles = {
   box: "flex items-center justify-between h-full",

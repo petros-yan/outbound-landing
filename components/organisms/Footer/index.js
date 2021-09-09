@@ -1,6 +1,12 @@
 import Link from "next/link";
+import { Section } from "components/templates";
 import { OutboundLogo } from "components/molecules";
-import { WORDS, FOOTER_MENU_ITEMS, DIVIDER_TYPES } from "consts";
+import {
+  WORDS,
+  FOOTER_MENU_ITEMS,
+  DIVIDER_TYPES,
+  SECTION_COLORS,
+} from "consts";
 import {
   Icons,
   Divider,
@@ -9,8 +15,7 @@ import {
   Text,
   Container,
 } from "components/atoms";
-import { Section } from "components/templates";
-const { Twitter, Url, Linkedin } = Icons;
+const { Twitter, Linkedin } = Icons;
 
 const styles = {
   footer: "flex flex-col lg:flex-row justify-between pb-8 pt-7 w-full bg-black",
@@ -18,16 +23,16 @@ const styles = {
   rightBox: "md:flex lg:order-last order-first",
   itemsWrapper: "pb-10 lg:pb-0",
   iconsWrapper: "flex pb-8 lg:pb-0",
-  divider: "hidden lg:block bg-white-50 w-0.5px h-22",
+  divider: "hidden md:block bg-white-50 w-0.5px h-22",
   grayText: "text-white-75 text-16",
   italicText: "text-white-75 italic text-14",
   whiteText: "text-white text-14",
-  link: "flex items-center cursor-pointer",
+  link: "inline-flex items-center cursor-pointer",
 };
 
 const Footer = () => {
   return (
-    <Section bgType="black">
+    <Section bg={SECTION_COLORS.BLACK}>
       <Container>
         <footer className={styles.footer}>
           <div className={styles.leftBox}>
@@ -71,7 +76,7 @@ const Footer = () => {
                 type={DIVIDER_TYPES.VERTICAL}
                 className={styles.divider}
               />
-              <Spacing className="lg:pr-8" />
+              <Spacing className="md:pr-8" />
               <div>
                 <Text className={styles.grayText}>
                   {WORDS.TERMS_OF_SERVICE}
@@ -82,8 +87,6 @@ const Footer = () => {
 
                 <div className="flex">
                   <Linkedin />
-                  <Spacing className="pr-4" />
-                  <Url />
                   <Spacing className="pr-4" />
                   <Twitter />
                 </div>
