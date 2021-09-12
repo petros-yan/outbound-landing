@@ -22,7 +22,7 @@ const styles = {
   roundBorder: "border-5 rounded-full border-white",
 };
 
-const Plans = ({ data }) => {
+const Pricing = ({ data }) => {
   const { free, team, enterprise } = data;
   const [isMounthly, setIsMounthly] = useState(true);
 
@@ -84,4 +84,4 @@ const Plans = ({ data }) => {
   );
 };
 
-export default Plans;
+export default Pricing;

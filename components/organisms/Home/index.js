@@ -1,5 +1,21 @@
-export { default as SectionA } from "./SectionA";
-export { default as SectionB } from "./SectionB";
-export { default as SectionC } from "./SectionC";
-export { default as SectionD } from "./SectionD";
-export { default as SectionE } from "./SectionE";
+import { Fragment } from "react";
+import { Hero } from "./Hero";
+import { WritingWays } from "./WritingWays";
+import { Steps } from "./Steps";
+import { ReuseTeamWorks } from "./ReuseTeamWorks";
+import {Values} from "./Values";
+
+const Home = ({ data }) => {
+  const { hero, writingWays, reuseTeamWorks , values } = data;
+  return (
+    <Fragment>
+      <Hero data={hero} />
+      <WritingWays data={writingWays} />
+      <Steps />
+      <ReuseTeamWorks data={reuseTeamWorks} />
+      <Values data={values} />
+    </Fragment>
+  );
+};
+
+export default Home;
