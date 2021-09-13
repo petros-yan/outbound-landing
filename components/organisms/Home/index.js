@@ -3,10 +3,10 @@ import { Hero } from "./Hero";
 import { WritingWays } from "./WritingWays";
 import { Steps } from "./Steps";
 import { ReuseTeamWorks } from "./ReuseTeamWorks";
-import {Values} from "./Values";
+import { Values } from "./Values";
 
 const Home = ({ data }) => {
-  const { hero, writingWays, reuseTeamWorks , values } = data;
+  const { hero, writingWays, reuseTeamWorks, values } = data;
   return (
     <Fragment>
       <Hero data={hero} />

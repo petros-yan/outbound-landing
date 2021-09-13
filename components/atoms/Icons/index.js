@@ -6,7 +6,6 @@ export { About } from "./About";
 export { Pricing } from "./Pricing";
 export { Linkedin } from "./Linkedin";
 export { Twitter } from "./Twitter";
-export { Times } from "./Times";
 export { Ellipse } from "./Ellipse";
 export { WriteFast } from "./WriteFast";
 export { FastAndQuality } from "./FastAndQuality";
