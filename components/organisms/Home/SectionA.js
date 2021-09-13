@@ -64,7 +64,7 @@ const SectionA = ({ data }) => {
         <div className=" bg-dark lg:w-6/12 w-full h-full md:bg-dark-gradient"></div>
       </div>
 
-      <div className="min-h top-0 left-0 h-full w-full absolute">
+      <div className="top-0 left-0 h-full w-full absolute">
         <Content data={data} />
       </div>
 
