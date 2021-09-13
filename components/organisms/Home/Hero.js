@@ -1,18 +1,11 @@
-import {
-  Paragraph,
-  Heading,
-  Spacing,
-  Image,
-  Container,
-  Icons,
-} from "components/atoms";
+import { Heading, Spacing, Image, Container, Icons } from "components/atoms";
 import { GoogleButton } from "components/molecules";
 import { WORDS } from "consts";
 import homeSection1 from "public/assets/homeSection1.svg";
 const { Ellipse } = Icons;
 
 const Content = ({ data }) => {
-  const { heading, paragraph1, paragraph2 } = data;
+  const { heading, text } = data;
 
   return (
     <Container className="lg:flex">
@@ -30,13 +23,10 @@ const Content = ({ data }) => {
             <Image src={homeSection1} alt="img" />
           </div>
           <Spacing className="pb-8" />
-          <Paragraph className="text-white-75 lg:text-24 text-17">
-            {paragraph1}
-          </Paragraph>
-          <Spacing className="pb-8" />
-          <Paragraph className="text-white-75 lg:text-24 text-17">
-            {paragraph2}
-          </Paragraph>
+          <div
+              className="text-white-75 lg:text-24 text-17"
+              dangerouslySetInnerHTML={{ __html: text }}
+          />
           <Spacing className="pb-6" />
           <GoogleButton title={WORDS.CONTINUE_WITH_GOOGLE} />
         </div>
@@ -56,7 +46,7 @@ const Content = ({ data }) => {
   );
 };
 
-const SectionA = ({ data }) => {
+export const Hero = ({ data }) => {
   return (
     <section className="relative w-full">
       <div className="absolute top-0 left-0 w-full h-full lg:flex">
@@ -74,5 +64,3 @@ const SectionA = ({ data }) => {
     </section>
   );
 };
-
-export default SectionA;

@@ -1,16 +1,12 @@
 import { Page } from "components/templates";
-import { Plans } from "components/organisms";
+import { Pricing } from "components/organisms";
 import { PRICING_DATA } from "consts";
 
-export default function Pricing(props) {
-  const { data } = props;
-
+export default function PricingPage({data}) {
   return (
-    <div>
-      <Page>
-        <Plans data={data} />
-      </Page>
-    </div>
+    <Page>
+      <Pricing data={data} />
+    </Page>
   );
 }
 

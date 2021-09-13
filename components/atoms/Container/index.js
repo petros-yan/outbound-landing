@@ -2,7 +2,8 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 
 const classes = {
-  desktop: "xl:w-1275px xl:px-0 w-full mx-auto",
+  desktop: "3xl:w-1275px 3xl:px-0 w-full mx-auto",
+  smallDasktop: 'lg:px-16',
   tablet: "md:px-6",
   mobile: "xs:px-4",
 };
@@ -12,6 +13,7 @@ const Container = ({ children, className }) => {
     <div
       className={classNames(
         classes.desktop,
+        classes.smallDasktop,
         classes.tablet,
         classes.mobile,
         className

@@ -1,14 +1,12 @@
-import {
-  Container,
-  Heading,
-  Paragraph,
-  Icons,
-  Spacing,
-} from "components/atoms";
-import { SECTION_COLORS } from "consts";
+import { Container, Heading, Paragraph, Icons, Spacing } from "components/atoms";
 import { Section } from "components/templates";
+import { SECTION_COLORS } from "consts";
 import classNames from "classnames";
 const { WriteFast, Teamwork, ContactBack, FastAndQuality } = Icons;
+
+const styles = {
+
+}
 
 const getIcons = (num) => {
   switch (num) {
@@ -23,7 +21,7 @@ const getIcons = (num) => {
   }
 };
 
-const SectionE = ({ data }) => {
+export const Values = ({ data }) => {
   const { heading, boards } = data;
 
   return (
@@ -38,26 +36,24 @@ const SectionE = ({ data }) => {
         </div>
         <Spacing className="pb-10" />
 
-        <div className="md:flex flex-wrap justify-between">
+        <div className="grid 3xl:grid-cols-4 lg:grid-cols-2 grid-cols-1">
           {boards.map((board, i) => {
             return (
-              <div
-                key={i}
-                className={classNames(
-                  i === 0 || i === 3 ? "lg:w-328px" : "lg:w-270px"
-                )}
-              >
+              <div 
+                key={i} 
+                className={
+                  classNames(
+                    i === 0 || i === boards.length - 1 ? '3xl:w-328px' : '3xl:w-270px',
+                    {'3xl:mr-4': i !== boards.length - 1}
+                  )
+                }>
                 <div className="p-4 border border-white-25 rounded-3xl bg-black-25">
                   {getIcons(i)}
                   <Spacing className="pb-8" />
                   <Paragraph className="text text-white-75 text-24">
-                    {board.text}
+                    {board}
                   </Paragraph>
                 </div>
-                {i !== boards.length - 1 ? (
-                  <Spacing className="xs:pb-4 md:pb-0" />
-                ) : null}
-                {i !== boards.length - 1 ? <Spacing className="pr-4" /> : null}
               </div>
             );
           })}
@@ -68,5 +64,3 @@ const SectionE = ({ data }) => {
     </Section>
   );
 };
-
-export default SectionE;

@@ -21,7 +21,7 @@ export default function About(props) {
 export async function getServerSideProps() {
   return {
     props: {
-      categories: {},
+      title: "About",
     },
   };
 }

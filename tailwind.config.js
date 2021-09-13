@@ -200,7 +200,7 @@ module.exports = {
         "linear-gradient(142.82deg, rgba(233, 30, 99, 0.67) -31.39%, #13142C 60.03%)",
     },
     extend: {
-      screens: { "3xl": "1700px", "4xl": "1921px" },
+      screens: { "3xl": "1435px", "4xl": "1921px" },
       borderWidth: {
         0.5: "0.5px",
         1: "1px",
