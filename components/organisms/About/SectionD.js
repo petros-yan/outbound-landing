@@ -7,7 +7,7 @@ import {
 } from "components/atoms";
 import { Section } from "components/templates";
 import { SECTION_COLORS } from "consts";
-import ourvision from "public/assets/ourvision.svg";
+import ourvision from "public/assets/our_vision.svg";
 
 const SectionD = ({ data }) => {
   return (

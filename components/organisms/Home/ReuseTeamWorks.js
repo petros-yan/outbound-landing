@@ -1,20 +1,26 @@
 import { Fragment } from "react";
-import { Heading, Spacing, Image, Container, Paragraph } from "components/atoms";
+import {
+  Heading,
+  Spacing,
+  Image,
+  Container,
+  Paragraph,
+} from "components/atoms";
 import { Section } from "components/templates";
 import { SECTION_COLORS } from "consts";
-import reuseTeamWorks from "public/assets/reuseTeamWorks.png";
+import reuseTeamWorks from "public/assets/reuse_team_works.png";
 import users from "public/assets/users.svg";
 import email from "public/assets/email.svg";
 
 const styles = {
-  container: 'md:block lg:hidden xs:w-328px md:w-444px m-auto',
-  headingBox: 'max-w-480 m-auto text-center',
-  heading: 'text-white text-32 font-medium',
-  teamworkImageBox: 'hidden lg:flex justify-center',
-  paragraphBox: 'flex items-center',
-  doth: 'w-6px h-6px rounded-full bg-white',
-  paragraph: 'text-white text-15 opacity-80',
-}
+  container: "md:block lg:hidden xs:w-328px md:w-444px m-auto",
+  headingBox: "max-w-480 m-auto text-center",
+  heading: "text-white text-32 font-medium",
+  teamworkImageBox: "hidden lg:flex justify-center",
+  paragraphBox: "flex items-center",
+  doth: "w-6px h-6px rounded-full bg-white",
+  paragraph: "text-white text-15 opacity-80",
+};
 
 export const ReuseTeamWorks = ({ data }) => {
   const { heading, paragraphs } = data;

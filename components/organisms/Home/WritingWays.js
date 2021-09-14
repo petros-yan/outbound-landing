@@ -1,27 +1,27 @@
 import { Paragraph, Spacing, Image, Container } from "components/atoms";
 import { Section } from "components/templates";
 import { SECTION_COLORS } from "consts";
-import writingWays from "public/assets/writingWays.png";
-import writingVector from "public/assets/writingVector.png";
+import writingWays from "public/assets/writing_ways.png";
+import writingVector from "public/assets/writing_vector.png";
 
 const styles = {
-  heading: 'flex lg:text-32 text-26 font-medium',
-  text: 'text-white-75 lg:text-24 text-17',
-  old: { container: 'w-full md:w-50%' },
+  heading: "flex lg:text-32 text-26 font-medium",
+  text: "text-white-75 lg:text-24 text-17",
+  old: { container: "w-full md:w-50%" },
   new: {
-    container: 'relative w-full md:w-50% md:ml-16',
-    vector: 'xs:hidden md:block absolute top-10 -left-40',
-    hiddenVector: 'xs:hidden md:block invisible',
-  }
-}
+    container: "relative w-full md:w-50% md:ml-16",
+    vector: "xs:hidden md:block absolute top-10 -left-40",
+    hiddenVector: "xs:hidden md:block invisible",
+  },
+};
 
-const Old = ({oldHeading, oldText}) => {
+const Old = ({ oldHeading, oldText }) => {
   return (
     <div className={styles.old.container}>
       <Spacing className="pb-13" />
       <div className="max-w-580">
-        <div 
-          className={styles.heading} 
+        <div
+          className={styles.heading}
           dangerouslySetInnerHTML={{ __html: oldHeading }}
         />
         <Spacing className="pb-4" />
@@ -31,10 +31,10 @@ const Old = ({oldHeading, oldText}) => {
       <Image src={writingWays} alt="writing ways" />
       <Spacing className="lg:pb-18" />
     </div>
-  )
-}
+  );
+};
 
-const New = ({newHeading, newText}) => {
+const New = ({ newHeading, newText }) => {
   return (
     <div className={styles.new.container}>
       <Spacing className="pb-13" />
@@ -47,16 +47,16 @@ const New = ({newHeading, newText}) => {
       </div>
 
       <div className="max-w-530">
-        <div 
-          className={styles.heading} 
+        <div
+          className={styles.heading}
           dangerouslySetInnerHTML={{ __html: newHeading }}
         />
         <Spacing className="pb-13px" />
         <Paragraph className={styles.text}>{newText}</Paragraph>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const WritingWays = ({ data }) => {
   const { oldHeading, newHeading, oldText, newText } = data;
