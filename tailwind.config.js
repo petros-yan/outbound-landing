@@ -1,7 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  // purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     container: {
@@ -194,7 +194,7 @@ module.exports = {
       transparent: "transparent",
     },
     backgroundImage: {
-      // "dark-gradient": "linear-gradient(90deg, #16152D 0%, #1D1C3C 100%)",
+      "dark-gradient": "linear-gradient(90deg, #16152D 0%, #1D1C3C 100%)",
       "blue-gradient": "linear-gradient(104.13deg, #323D87 0%, #1D1C3C 100%)",
       "light-blue-gradient":
         "linear-gradient(142.82deg, #3F51B5 -31.39%, #1D1C3C 60.03%)",
